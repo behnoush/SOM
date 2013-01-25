@@ -1,0 +1,6 @@
+load("music.data")
+viewData(music)
+music = na.omit(music)
+music.n = normalize (music)
+result = som(music.n, xdim = 2, ydim = 2)
+plot(result)
